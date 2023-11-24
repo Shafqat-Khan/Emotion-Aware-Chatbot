@@ -1,0 +1,16 @@
+.container-fluid{
+    display: flex;
+    justify-content: center;
+
+}
+.copyright{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: DM Sans;
+    padding-inline: 20px;
+    color: #2C424F;
+}
