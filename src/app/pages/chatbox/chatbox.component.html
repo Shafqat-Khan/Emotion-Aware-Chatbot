@@ -1,1 +1,30 @@
-<p>chatbox works!</p>
+<div class="main-container">
+    <div class="chat-box">
+        <div class="col-md-12 text-center top">
+            <label *ngIf="messages.length == 0" for="nameField"
+              >Your Messages</label
+            >
+            <ng-container *ngFor="let message of messages">
+              <div
+                class="message"
+                [ngClass]="{
+                  from: message.author === 'bot',
+                  to: message.author === 'user'
+                }"
+              >
+                {{ message.content }}
+              </div>
+            </ng-container>
+          </div>
+          <div class="col-md-12 text-center bottom">
+                <input
+              [(ngModel)]="value"
+              (keyup.enter)="sendMessage()"
+              type="text"
+              class="form-control"
+            />
+          
+            <button (click)="sendMessage()">Submit</button>
+          </div>      
+    </div>
+</div>
