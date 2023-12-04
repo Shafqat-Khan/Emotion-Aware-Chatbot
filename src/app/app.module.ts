@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 // Components
 import { HomeComponent } from './pages/home/home.component';
@@ -31,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
     
   ],
   providers: [],
