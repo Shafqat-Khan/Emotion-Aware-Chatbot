@@ -16,6 +16,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { FooterComponent } from './components/footer/footer.component';
 import { ChatboxComponent } from './pages/chatbox/chatbox.component';
 import { FormsModule } from '@angular/forms';
+import { HomeSliderComponent } from './components/home-slider/home-slider.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    ChatboxComponent
+    ChatboxComponent,
+    HomeSliderComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,7 @@ import { FormsModule } from '@angular/forms';
     MatToolbarModule,
     MatIconModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
     
   ],
   providers: [],
